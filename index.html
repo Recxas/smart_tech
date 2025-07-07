@@ -6,46 +6,46 @@
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: /targets/targets.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <img id="card" src="!TheMoon.webp" />
-        <img id="card2" src="!TheMoon.webp" />
-        <img id="card3" src="!TheMoon.webp" />
-        <img id="card4" src="!TheMoon.webp" />
-        <img id="card5" src="!TheMoon.webp" />
+        <img id="card" src="/img/Moon.svg" />
+        <img id="card2" src="/img/Sun.svg" />
+        <img id="card3" src="/img/Tower.svg" />
+        <img id="card4" src="/img/!TheMoon.webp" />
+        <img id="card5" src="/img/!TheMoon.webp" />
 
 
-        <a-asset-item id="avatarModel" src="./Rotten Brain.glb"></a-asset-item>
-        <a-asset-item id="avatarModel2" src="./Rotten Brain.glb"></a-asset-item>
-        <a-asset-item id="avatarModel2" src="./Rotten Brain.glb"></a-asset-item>
-        <a-asset-item id="avatarModel2" src="./Rotten Brain.glb"></a-asset-item>
-        <a-asset-item id="avatarModel2" src="./Rotten Brain.glb"></a-asset-item>
+        <a-asset-item id="avatarModel" src="/obj3d/Rotten Brain.glb"></a-asset-item>
+        <a-asset-item id="avatarModel2" src="/obj3d/Rotten Brain.glb"></a-asset-item>
+        <a-asset-item id="avatarModel2" src="/obj3d/Rotten Brain.glb"></a-asset-item>
+        <a-asset-item id="avatarModel2" src="/obj3d/Rotten Brain.glb"></a-asset-item>
+        <a-asset-item id="avatarModel2" src="/obj3d/Rotten Brain.glb"></a-asset-item>
 
 
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane src="#card" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>
+        <a-plane src="#card" position="0 0 0" height="1.8" width="1" rotation="0 0 0"></a-plane>
         <a-gltf-model rotation="0 0 0 " position=" 0 0.5" scale="1.09 1.09 1.09" src="#avatarModel" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
 
-      <a-entity mindar-image-target="targetIndex: 1">
-        <a-plane src="#card2" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>
+     <a-entity mindar-image-target="targetIndex: 1">
+        <a-plane src="#card2" position="0 0 0" height="1.8" width="1" rotation="0 0 0"></a-plane>
         <a-gltf-model rotation="0 0 0 " position=" 0 0.5" scale="1.09 1.09 1.09" src="#avatarModel2" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
 
-            <a-entity mindar-image-target="targetIndex: 1">
-        <a-plane src="#card3" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>
+            <a-entity mindar-image-target="targetIndex: 2">
+        <a-plane src="#card3" position="0 0 0" height="1.8" width="1" rotation="0 0 0"></a-plane>
         <a-gltf-model rotation="0 0 0 " position=" 0 0.5" scale="1.09 1.09 1.09" src="#avatarModel2" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
 
-            <a-entity mindar-image-target="targetIndex: 1">
+            <a-entity mindar-image-target="targetIndex: 3">
         <a-plane src="#card4" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>
         <a-gltf-model rotation="0 0 0 " position=" 0 0.5" scale="1.09 1.09 1.09" src="#avatarModel2" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
 
-            <a-entity mindar-image-target="targetIndex: 1">
+            <a-entity mindar-image-target="targetIndex: 4">
         <a-plane src="#card5" position="0 0 0" height="1.4" width="1" rotation="0 0 0"></a-plane>
         <a-gltf-model rotation="0 0 0 " position=" 0 0.5" scale="1.09 1.09 1.09" src="#avatarModel2" animation="property: position; to: 0 0 0; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
       </a-entity>
